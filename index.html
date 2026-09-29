@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Генератор «Угадай мелодию»</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
   .step { display: inline-block; background: var(--lime); border: 2px solid var(--ink); border-radius: 12px;
     padding: 3px 12px; font: 800 13px 'Montserrat Alternates'; margin-bottom: 12px; color: var(--ink); }
   .drop { border: 3px dashed var(--ink); border-radius: 18px; padding: 34px 16px; text-align: center; cursor: pointer;
-    background: var(--paper); transition: background .15s, transform .15s; }
+    background: var(--paper); color: var(--ink); transition: background .15s, transform .15s; }
   .drop.over { background: #E8FBC8; transform: scale(1.01); }
   .drop strong { font: 700 18px 'Montserrat Alternates'; display: block; margin-bottom: 6px; }
   .drop span { color: var(--muted); font-size: 14px; }
@@ -74,7 +75,8 @@
     :root:not([data-theme="light"]) .card { border-color: #CEF868; box-shadow: 6px 6px 0 #03191C; color: #E6F7F9; }
     :root:not([data-theme="light"]) h1, :root:not([data-theme="light"]) header p { color: #fff; }
     :root:not([data-theme="light"]) input[type=text], :root:not([data-theme="light"]) input[type=number] { background: #0B2629; color: #fff; border-color: #CEF868; }
-    :root:not([data-theme="light"]) .drop { border-color: #CEF868; }
+    :root:not([data-theme="light"]) .drop { border-color: #CEF868; background: #16393F; color: #E6F7F9; }
+    :root:not([data-theme="light"]) .drop.over { background: #1F4D3A; }
     :root:not([data-theme="light"]) .btn.secondary { background: #0B2629; color: #fff; }
   }
 </style>
