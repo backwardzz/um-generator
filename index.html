@@ -99,7 +99,7 @@
       <input type="file" id="pick" multiple accept=".xlsx,audio/*,video/*,image/*" hidden>
     </div>
     <div class="files" id="files"></div>
-    <p class="hint">Файлы песен и картинок подхватываются по номеру в имени — <code>1-5.mp3</code> = тур 1, вопрос 5 (<code>1.5</code>, <code>01_05</code> тоже подойдут) — или по названию, например <code>Bruno Mars - 24K Magic.mp3</code>. Песни обрезаются по колонке «Тайминг». Если файла нет, программа сама возьмёт 30-секундный фрагмент из iTunes/Deezer и фото исполнителя.</p>
+    <p class="hint">Файлы песен и картинок подхватываются по номеру в имени — <code>1-5.mp3</code> = тур 1, вопрос 5 (<code>1.5</code>, <code>01_05</code> тоже подойдут) — или по названию, например <code>Bruno Mars - 24K Magic.mp3</code>. Если в ответе двое через «/», фото можно задать файлами <code>5-6-1.jpg</code> (слева) и <code>5-6-2.jpg</code> (справа). Песни обрезаются по колонке «Тайминг». Если файла нет, программа сама возьмёт 30-секундный фрагмент из iTunes/Deezer и фото исполнителя.</p>
     <div id="previewErr" class="err hidden"></div>
   </section>
 
@@ -115,6 +115,7 @@
       <label><input type="checkbox" id="autoAudio" checked> Искать песни автоматически</label>
       <label><input type="checkbox" id="autoImages" checked> Искать фото исполнителей</label>
       <label><input type="checkbox" id="showComment" checked> Название песни на слайде ответа</label>
+      <label><input type="checkbox" id="showQuestion" checked> Вопрос на слайде ответа</label>
     </div>
     <div class="tours" id="tours"></div>
     <div class="actions">
