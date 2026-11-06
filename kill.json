@@ -1,3 +1,9 @@
 {
-  "enabled": true
+  "enabled": true,
+  "update": {
+    "version": "1.4.0",
+    "url": "https://github.com/backwardzz/um-generator/releases/download/v1.4.0/um-generator-setup-1.4.0.exe",
+    "sha256": "c484708c7d1dce284c1ea65311044decc978a9eb889e837cf9047d6ec4a72ee9",
+    "size": 147863196
+  }
 }
